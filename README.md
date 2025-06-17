@@ -1,80 +1,100 @@
-# Big-data-Analytics
-# Crop Prediction 
-This project aims to analyze and provide insights into agriculture production using data science techniques. The dataset used for this project is obtained from the Agriculture Production dataset.
+**Big Data Analytics: Crop Prediction**
+This project applies big data and data science techniques to analyze agricultural production and enable accurate crop prediction. Using a structured dataset, various exploratory and predictive methods are used to identify patterns and recommend suitable crops based on soil and climate conditions.
 
-## Dataset Overview
-The dataset contains information about various agricultural features and the corresponding crop labels. It includes the following features:
+**Dataset Summary**
+The dataset consists of 2,200 records and includes the following features:
 
-N: Ratio of Nitrogen content in the soil
-P: Ratio of Phosphorus content in the soil
-K: Ratio of Potassium content in the soil
-temperature: Temperature in degrees Celsius
-humidity: Relative humidity in percentage
-ph: pH value of the soil
-rainfall: Rainfall in mm
-The shape of the dataset is (N, 8), where N=2200 represents the number of data points. The dataset does not contain any missing values.
+N: Nitrogen content in soil
 
-## Exploratory Data Analysis
-The mean values for each feature are as follows:
-Mean of N: 50.55
+P: Phosphorus content in soil
 
-Mean of P: 53.36
+K: Potassium content in soil
 
-Mean of K: 48.15
+Temperature: Measured in degrees Celsius
 
-Mean of temperature: 25.62
+Humidity: Relative humidity in percentage
 
-Mean of humidity: 71.48
+pH: Soil pH level
 
-Mean of ph: 6.47
+Rainfall: Measured in millimeters
 
-Mean of rainfall: 103.46
+Label: Crop name (target variable)
 
-## Crop Summary
-Interactively, you can select a crop label to view its summary statistics. The summary includes the minimum, average, and maximum values required for each feature by the selected crop.
+The dataset is clean and contains no missing values.
 
-## Feature Comparison
-Interactively, you can select a feature to compare the average values across different crop labels. The output displays the average value for each crop label for the selected feature.
+**Exploratory Data Analysis
+General statistics for the dataset:**
 
-## Feature Distribution
-The distribution of each feature is visualized using subplots. Each subplot represents the distribution plot for a specific feature.
+Nitrogen (N): 50.55
 
-## Cluster Analysis
-The optimum number of clusters is determined using the Elbow method. The dataset is then clustered into four clusters using the K-means algorithm. The crops belonging to each cluster are displayed.
+Phosphorus (P): 53.36
 
-## Visualizations:
+Potassium (K): 48.15
 
-The barplot is shown below:
-![BarPlot](https://github.com/waleedahmed0001/Crop_Prediction/blob/main/Visualizations/Barplot.PNG)
+Temperature: 25.62°C
+
+Humidity: 71.48%
+
+pH: 6.47
+
+Rainfall: 103.46 mm
+
+This analysis provides an overview of the environmental and soil conditions across all crops.
+
+**Crop-Wise Feature Summary**
+The project includes an interactive module where users can select a crop and view its minimum, average, and maximum values for each feature. This helps in understanding the optimal growing conditions for specific crops.
+
+**Feature Comparison**
+A feature comparison tool allows users to select any individual feature and view its average value across all crop types. This enables analysis of how certain environmental or soil factors vary by crop.
+
+**Feature Distributions**
+Each feature is visualized using distribution plots to highlight its overall range, central tendency, and skewness. These plots help assess how uniformly or unevenly values are distributed across the dataset.
+
+**Clustering Analysis**
+Using the Elbow Method, four optimal clusters are identified, and K-Means clustering is applied to group crops with similar growing conditions. This clustering provides insight into groups of crops that thrive under comparable environmental factors.
+
+**Visualizations**
+The following plots and visual summaries are included in the project:
+
+Bar plot of feature means
+
+Average value comparison across crop types
+
+Distribution plots of all features
+
+Confusion matrix from model evaluation
+
+All visual assets are included in the repository under the Visualizations folder.
+
+**Model Training and Evaluation**
+The dataset is divided into training and testing sets using an 80:20 ratio. A Logistic Regression model is trained on the data and evaluated using the following metrics:
+
+Accuracy
+
+Precision
+
+Recall
+
+F1-score
+
+Confusion Matrix
+
+Detailed classification report for each crop class
+
+This step measures how well the model predicts crop types based on soil and weather features.
+
+**Crop Prediction**
+The trained model can predict the most suitable crop for any given input of environmental and soil conditions. This tool serves as a valuable decision aid for farmers or agricultural planners.
+
+**Conclusion**
+This project demonstrates how data analytics and machine learning can be applied to agriculture for improved decision-making. By analyzing relationships between climate, soil composition, and crop types, the project offers insights into optimal farming practices. The resulting prediction model can be used to guide crop selection based on measurable conditions, supporting sustainable and informed agricultural development.
+
+Let me know if you'd like this turned into a README.md file or need a version with sample code or interactive features added.
 
 
-The Average of Features is shown below:
-<div align="center">
-  <img src="https://github.com/waleedahmed0001/Crop_Prediction/blob/main/Visualizations/Average.PNG" alt="Features Mean">
-</div>
 
 
 
 
-The Dsitplots of Features are shown below:
-![Average](https://github.com/waleedahmed0001/Crop_Prediction/blob/main/Visualizations/Distplots.PNG)
 
 
-
-## Model Training and Evaluation
-The dataset is split into training and testing sets using an 80:20 ratio. Logistic Regression is applied to train the model, and predictions are made on the test set. The performance of the model is evaluated using various metrics, including accuracy, precision, recall, F1-score, and the confusion matrix. The classification report provides detailed metrics for each class.
-
-The confusion matrix is shown below:
-
-<div align="center">
-  <img src="https://github.com/waleedahmed0001/Crop_Prediction/blob/main/Visualizations/Confusion_Matrix.PNG" alt="Confusion Matrix">
-</div>
-
-
-## Crop Prediction
-A sample prediction is made using the trained model based on provided climatic conditions. The suggested crop for the given climatic conditions is displayed.
-
-## Conclusion
-In this project, we have analyzed the Agriculture Production dataset using various data science techniques. The insights gained from the analysis can help farmers and agricultural stakeholders make informed decisions about crop selection and farming practices based on different climatic conditions and soil characteristics. The trained model can be utilized for crop prediction and recommendation purposes.
-
-The code and the report are available on GitHub for reference and further exploration.
