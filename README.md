@@ -40,4 +40,7 @@ Finally, the trained model is used to predict the best-suited crop for given con
 Conclusion
 This project demonstrates how data science can be effectively applied in agriculture to aid in crop recommendation and resource optimization. By integrating data analytics into farming, we can move toward more sustainable and data-driven agricultural practices.
 
+output
+
+![Image](https://github.com/user-attachments/assets/8e33c0e0-ad4b-4d79-952c-272babc54dd0)
 
